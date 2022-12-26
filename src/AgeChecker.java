@@ -10,13 +10,13 @@ public class AgeChecker {
         System.out.println("Ile masz lat?");
         int age = scanner.nextInt();
 
-        if (age<18) {
+        if (age<18 && age>=0) {
             System.out.println("Jesteś za młody. Nie możesz kupić alkoholu");
+        } else if (age<0) {
+            System.out.println("Podaj poprawną wartość");
         } else {
             System.out.println("Dziękujemy za zakupy. Pamiętaj alkohol szkodzi zdrowiu!");
         }
-
-
     }
 
 }
