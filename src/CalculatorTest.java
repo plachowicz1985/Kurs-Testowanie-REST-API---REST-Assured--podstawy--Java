@@ -9,17 +9,25 @@ public static void main(String[] args) {
     System.out.println("Podaj drugą liczbę, a następnie wciśnij ENTER");
     int secondNumber = scanner.nextInt();
 
-    int addition = firstNumber + secondNumber;
-    int subtraction = firstNumber - secondNumber;
-    int multiplication = firstNumber * secondNumber;
-    float division = firstNumber/secondNumber;
-    int mod = secondNumber%firstNumber;
+    Calculator calculator = new Calculator();
+    int dodawanie = calculator.addition(firstNumber, secondNumber);
+    int odejmowanie = calculator.substraction(firstNumber, secondNumber);
+    int mnozenie = calculator.multiplication(firstNumber, secondNumber);
+    int dzielenie = calculator.division(firstNumber, secondNumber);
+    int modulo = calculator.mod(firstNumber, secondNumber);
 
-    System.out.println("Dodawanie: "+addition);
-    System.out.println("Odejmowanie: "+subtraction);
-    System.out.println("Mnożenie: "+multiplication);
-    System.out.println("Dzielenie: "+division);
-    System.out.println("Mdulo: "+mod);
+
+//    int addition = firstNumber + secondNumber;
+//    int subtraction = firstNumber - secondNumber;
+//    int multiplication = firstNumber * secondNumber;
+//    float division = firstNumber/secondNumber;
+//    int mod = secondNumber%firstNumber;
+
+    System.out.println("Dodawanie: "+dodawanie);
+    System.out.println("Odejmowanie: "+odejmowanie);
+    System.out.println("Mnożenie: "+mnozenie);
+    System.out.println("Dzielenie: "+dzielenie);
+    System.out.println("Mdulo: "+modulo);
 //    int result = firstNumber*firstNumber;
 //    System.out.println(result);
 
