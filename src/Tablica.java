@@ -20,9 +20,9 @@ public class Tablica {
 //
 //        System.out.println(lottoNumbers.length);
 
-//        for (int i = 0; i < lottoNumbers.length; i++) {
-//            System.out.println(lottoNumbers[i]);
-//        }
+        for (int i = 0; i < lottoNumbers.length; i++) {
+            System.out.println(lottoNumbers[i]);
+        }
 
         System.out.println(lottoNumbers[6]);
 
