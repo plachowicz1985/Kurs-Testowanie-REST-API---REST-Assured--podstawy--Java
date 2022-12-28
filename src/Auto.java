@@ -4,6 +4,19 @@ public class Auto {
     public int rok;
     public int przebieg;
 
+    //konstruktor
+    public Auto() {
+
+    }
+
+    public Auto(String marka, String model, int rok, int przebieg) {
+        this.marka = marka;
+        this.model = model;
+        this.rok = rok;
+        this.przebieg = przebieg;
+
+    }
+
     //metoda
     public void jedz() {
         System.out.println("Jedź!");
@@ -19,4 +32,7 @@ public class Auto {
         System.out.println("Rok produkcji: " + rok);
         System.out.println("Przebieg: " + przebieg);
     }
+
+
+
 }

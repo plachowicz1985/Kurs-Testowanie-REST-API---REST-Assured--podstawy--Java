@@ -8,12 +8,25 @@
 public class StudentChecker {
 
     public static void main(String[] args) {
+
+        //pole nazwauczelni jest statyczne czyli charakterystyczne dla klasy, nie jest powiązane z konkretnym obiektem,
+        //nie jest unikalne dla każdego obiektu.
+        //Obiekt danej klasy będzie miał dostę do pól statycznych. Pole statyczne jest współdzielone przez wszystkie obiekty
+        //danej klasy
+
+        //Metoda statyczny jest również charakterystyczna dla klasy, a nie dla konkretnego obiektu danej klasy.
+        //Nie musimy tworzyc obiektu danej klasy aby wywolac tę metodę - metodę statyczną(infouczelnia)
+        String uczelnia = Student.nazwauczelni;
+        Student.infoUczelnia();
+
         Student student1 = new Student();
         student1.imie = "Piotr";
         student1.nazwisko = "Lachowicz";
         student1.nick = "PioL";
         student1.email = "PioL@wp.pl";
         student1.numerIndeksu = "1/2022";
+        String uczelniaStudenta1 = student1.nazwauczelni;
+        student1.infoUczelnia();
 
         Student student2 = new Student();
         student2.imie = "Paweł";
