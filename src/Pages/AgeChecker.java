@@ -1,4 +1,4 @@
-//zapytaj użytkownika o wiek, W przypadku gdy ma mniej niż 18 lat wypisz na ekranie informacje ze nie moze kupic
+package Pages;//zapytaj użytkownika o wiek, W przypadku gdy ma mniej niż 18 lat wypisz na ekranie informacje ze nie moze kupic
 //alkoholu. Gdy ma iwecej niz 18 lat to podziekuj mu za zakupy.
 
 import java.util.Scanner;
